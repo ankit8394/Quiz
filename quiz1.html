@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="quiz1.css">
+</head>
+<body>
+    <div id="main">
+        <div id="front-box">
+            <h1 class="f-h1">Quiz name</h1>
+            <input type="text" id="f-input" placeholder="Enter your name"><br>
+            <button id="strt-quiz" onclick="start()">Start-Quiz</button>
+        </div>
+        <div id="in-box-1" class="all-q-box">
+            <p class="h2" id="ques"></p> 
+            <ol>
+                <li>
+                    <button class="btn-ans" onclick="optionaa()" id="opta"></button>
+                </li>
+                <li>
+                    <button class="btn-ans" onclick="optionbb()" id="optb"></button>
+                </li>
+                <li>
+                    <button class="btn-ans" onclick="optioncc()" id="optc"></button>
+                </li>
+                <li>
+                    <button class="btn-ans" onclick="optiondd()" id="optd"></button>
+                </li>
+            </ol>
+            <div id="btn-div">
+                <button onclick="prev()" id="prev">Previous</button>
+                <button onclick="next()" id="next">Next</button>
+                <button onclick="finish()" id="sub">Submit</button>
+            </div>
+        </div>
+        <div id="result-panel">
+            <h2>Your result is here</h4>
+               <div class="name-div">
+                    <label for="name">NAME</label>
+                    <div id="name"></div>
+               </div>
+                <div class="div-score">
+                    <div><p>YOUR SCORE IS : </p></div>
+                    <div id="result"></div>
+                </div>
+        </div>
+    </div>
+    <script src="quiz1.js"></script>    
+</body>
+</html>
